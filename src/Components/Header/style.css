@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: #f0f0f0;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+}
+.logo{
+  display: flex;
+  gap: 5px;
+}
+
+.logo img {
+  height: 45px;
+}
+.logo::after{
+  content: "Organick";
+  color: #274C5B;
+  font-size: 38px;
+}
+
+.nav-links {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: #274C5B;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: #274C5B;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  cursor: pointer;
+  color: #274C5B;
+  font-size: 20px;
+}
+.dropdown-button::after{
+  content: "↓";
+  font-size: 13px;
+  margin-left: 2px;
+}
+.dropdown.active .dropdown-button::after{
+  content: "↑";
+  font-size: 13px;
+  margin-left: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown.active .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 5px 10px;
+  color: #274C5B;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/* Style for the input part */
+.search {
+  display: flex;
+  align-items: center;
+}

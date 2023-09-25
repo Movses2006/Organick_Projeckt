@@ -1,0 +1,25 @@
+.input-past{
+    display: flex;
+    justify-content: flex-end;
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.buttonForInput {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+  
+.buttonForInput.active {
+    background-color: #f0f0f0;
+}
+  
